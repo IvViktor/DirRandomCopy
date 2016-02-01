@@ -17,10 +17,9 @@ public class AppMain
     	}
 		int filesNum=srcDir.listFiles().length;
 		Set<Integer> numberSet=new Randomizer().getUniqRandomsSet(filesNum);
-		DirCopy dc=new DirCopy(srcDir, targetDir);
+		DirCopy dc=new DirCopy(srcDir, targetDir);//
 		dc.copyDir(numberSet);
 		System.out.println("Files successfully copied into "+targetDir.getName());
     }
-	
-	
+		
 }
