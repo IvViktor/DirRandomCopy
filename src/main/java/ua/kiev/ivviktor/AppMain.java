@@ -11,8 +11,8 @@ public class AppMain
 		if(args.length!=4){System.out.println("SYNTAX ERROR.\r\n"+usage);System.exit(1);}	
     	File srcDir=null, targetDir=null;
     	for(int i=0;i<args.length;i++){
-    		if(args[i]=="-s") srcDir=new File(args[++i]);
-    		else if(args[i]=="-t"){ targetDir=new File(args[++i]);targetDir.mkdir();}
+    		if(args[i].equals("-s")) srcDir=new File(args[++i]);
+    		else if(args[i].equals("-t")){ targetDir=new File(args[++i]);targetDir.mkdir();}
     		else{ System.out.println(usage);System.exit(1);}
     	}
 		int filesNum=srcDir.listFiles().length;
