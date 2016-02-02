@@ -5,7 +5,9 @@ import java.util.Set;
 
 public class AppMain
 {
-	private static final String usage="USAGE:\r\nDirRandomOrder -s <directory> -t <directory>";
+	private static final String usage="USAGE:\r\nRandomList -s <directory> -t <directory>\r\n"+
+										"-s specify source directory\r\n"+
+										"-t specify name of creating directory";
     public static void main( String[] args )
     {
 		if(args.length!=4){System.out.println("SYNTAX ERROR.\r\n"+usage);System.exit(1);}	
